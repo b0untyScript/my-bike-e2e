@@ -1,0 +1,444 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100,300,400,500,600,700,800,900&display=swap');
+
+$font-main: "Montserrat", system-ui;
+
+main {
+    background-color: #1D1D1D;
+
+    .moveFree {
+        padding: 90px 20px 0;
+
+        .mainText {
+
+            .headerOfText {
+                font-family: $font-main;
+                font-weight: 500;
+                font-size: 40px;
+                color: #FFFFFF;
+                margin-bottom: 30px;
+            }
+
+            .textContent {
+                font-family: $font-main;
+                font-weight: 500;
+                font-size: 25px;
+                color: #FFFFFF;
+            }
+        }
+    }
+
+    .compareBikes {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+
+        .mainHead {
+            font-family: $font-main;
+            font-weight: 500;
+            font-size: 35px;
+            color: #FFFFFF;
+            margin-top: 100px;
+        }
+
+        .singlImg {
+            margin: 0;
+            width: 90%;
+        }
+
+        .underImg {
+            display: flex;
+            flex-direction: column;
+            margin: 20px;
+            text-align: start;
+
+            .under {
+                font-family: $font-main;
+                font-weight: 400;
+                font-size: 20px;
+                color: #FFFFFF;
+
+                &:nth-child(1) {
+                    color: #FFFFFF;
+                    font-size: 30px;
+                    font-weight: 700;
+                    margin-bottom: 10px;
+                }
+
+                &:nth-child(3) {
+                    color: #FFFFFF;
+                    font-size: 30px;
+                    font-weight: 700;
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}
+
+.theDetails {
+
+    .mainText {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .firstText {
+            margin-top: 60px;
+            margin-bottom: 20px;
+            font-family: $font-main;
+            font-weight: 500;
+            font-size: 35px;
+            color: #FFFFFF;
+        }
+    }
+
+    .firstGallary {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+
+        .imgContainer {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+
+            .imgGallary {
+                width: 48%;
+                height: auto;
+                object-fit: cover;
+            }
+        }
+
+        .underImg {
+            margin-top: 15px;
+
+            .under {
+                font-family: $font-main;
+                font-weight: 400;
+                font-size: 18px;
+                color: #FFFFFF;
+                margin-bottom: 30px;
+
+                &:first-child {
+                    font-weight: 700;
+                    font-size: 23px;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+
+        .buttonGallary {
+            width: 290px;
+            height: 56px;
+
+            font-family: $font-main;
+            font-weight: 700;
+            font-size: 18px;
+            color: #1D1D1D;
+            cursor: pointer;
+
+            background-color: #FFFFFF;
+            border: none;
+            border-radius: 50px;
+            transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+
+            &:hover {
+                box-shadow: 0 0 10px #FFFFFF;
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 520px) and (max-width: 744px) {
+    .moveFree {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 30px;
+
+        .mainText {
+            display: flex;
+            align-items: center;
+
+            .headerOfText {
+                margin-right: 70px;
+                display: flex;
+                white-space: nowrap;
+                align-items: flex-start;
+            }
+        }
+    }
+
+    .compareBikes {
+        max-width: 320px;
+        margin: 0 auto;
+    }
+
+    .theDetails {
+        margin: 30px;
+
+        .firstGallary {
+            .imgContainer {
+                display: flex;
+
+                &:nth-of-type(1) {
+                    .imgGallary:first-child {
+                        width: 67%;
+                        height: auto;
+                    }
+
+                    .imgGallary:last-child {
+                        width: 30%;
+                        height: auto;
+                    }
+                }
+
+                &:nth-of-type(3) {
+                    .imgGallary:first-child {
+                        width: 67%;
+                        height: auto;
+                    }
+
+                    .imgGallary:last-child {
+                        width: 30%;
+                        height: auto;
+                    }
+                }
+
+                &:nth-of-type(5) {
+                    .imgGallary:first-child {
+                        width: 30%;
+                        height: auto;
+                    }
+
+                    .imgGallary:last-child {
+                        width: 67%;
+                        height: auto;
+                    }
+                }
+            }
+
+            .buttonGallary {
+                width: 390px;
+            }
+        }
+
+    }
+}
+
+@media screen and (min-width: 744px) and (max-width: 1260px) {
+    .moveFree {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 80px;
+
+        .mainText {
+            display: flex;
+            align-items: center;
+
+            .headerOfText {
+                margin-right: 150px;
+                display: flex;
+                white-space: nowrap;
+                font-size: 65px !important;
+            }
+        }
+    }
+
+    .compareBikes {
+        display: flex;
+        align-items: center;
+        margin: 0 80px;
+
+        .wrapper {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            .wrapper2 {
+
+                .container {
+
+                    .singlImg {
+                        width: 300px;
+                    }
+                }
+            }
+        }
+    }
+
+    .theDetails {
+        margin: 30px;
+
+        .mainText {
+
+            .firstText {
+                font-size: 60px;
+            }
+        }
+
+        .firstGallary {
+            .imgContainer {
+                display: flex;
+
+                &:nth-of-type(1) {
+                    .imgGallary:first-child {
+                        width: 67%;
+                        height: auto;
+                    }
+
+                    .imgGallary:last-child {
+                        width: 30%;
+                        height: auto;
+                    }
+                }
+
+                &:nth-of-type(3) {
+                    .imgGallary:first-child {
+                        width: 67%;
+                        height: auto;
+                    }
+
+                    .imgGallary:last-child {
+                        width: 30%;
+                        height: auto;
+                    }
+                }
+
+                &:nth-of-type(5) {
+                    .imgGallary:first-child {
+                        width: 30%;
+                        height: auto;
+                    }
+
+                    .imgGallary:last-child {
+                        width: 67%;
+                        height: auto;
+
+                    }
+
+                }
+
+            }
+
+            .underImg {
+                max-width: 1000px;
+            }
+        }
+
+        .buttonGallary {
+            width: 390px;
+        }
+    }
+}
+
+@media screen and (min-width: 1260px) and (max-width: 2100px) {
+    .moveFree {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 80px;
+
+        .mainText {
+            display: flex;
+            align-items: center;
+
+            .headerOfText {
+                margin-right: 150px;
+                display: flex;
+                white-space: nowrap;
+                font-size: 65px !important;
+            }
+        }
+    }
+
+    .compareBikes {
+        display: flex;
+        align-items: center;
+        margin: 0 80px;
+
+        .wrapper {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            .wrapper2 {
+
+                .container {
+
+                    .singlImg {
+                        width: 300px;
+                    }
+                }
+            }
+        }
+    }
+
+    .theDetails {
+        margin: 30px;
+
+        .mainText {
+
+            .firstText {
+                font-size: 60px;
+            }
+        }
+
+        .firstGallary {
+            .imgContainer {
+                display: flex;
+
+                &:nth-of-type(1) {
+                    .imgGallary:first-child {
+                        width: 67%;
+                        height: auto;
+                    }
+
+                    .imgGallary:last-child {
+                        width: 30%;
+                        height: auto;
+                    }
+                }
+
+                &:nth-of-type(3) {
+                    .imgGallary:first-child {
+                        width: 67%;
+                        height: auto;
+                    }
+
+                    .imgGallary:last-child {
+                        width: 30%;
+                        height: auto;
+                    }
+                }
+
+                &:nth-of-type(5) {
+                    .imgGallary:first-child {
+                        width: 30%;
+                        height: auto;
+                    }
+
+                    .imgGallary:last-child {
+                        width: 67%;
+                        height: auto;
+
+                    }
+
+                }
+
+            }
+
+            .underImg {
+                max-width: 1000px;
+            }
+        }
+
+        .buttonGallary {
+            width: 390px;
+        }
+    }
+}

@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100,300,400,500,600,700,800,900&display=swap');
+
+$font-main: "Montserrat", system-ui;
+
+body {
+    background-color: #1D1D1D;
+
+    .contactUs {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 50px;
+
+        .pContact {
+            margin-bottom: 50px;
+            font-family: $font-main;
+            font-weight: 400;
+            font-size: 38px;
+            color: #FFFFFF;
+        }
+
+        .firstContainer {
+            max-width: 320px;
+            margin: 20px;
+
+            .contactConteiner {
+                .element {
+                    font-family: $font-main;
+                    font-weight: 700;
+                    font-size: 20px;
+                    color: #FFFFFF;
+                    margin-bottom: 30px;
+
+                    &:nth-child(1) {
+                        font-weight: 400;
+                        font-size: 18px;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+
+        .contactForm {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 320px;
+            margin-bottom: 20px;
+
+            .inputField {
+                width: 290px;
+                border: none;
+                font-family: $font-main;
+                font-weight: 400;
+                font-size: 16px;
+                color: #3E3E3E;
+                padding: 15px 20px;
+                margin-bottom: 15px;
+
+                &::placeholder {
+                    font-family: $font-main;
+                    color: #7E7E83;
+                }
+            }
+
+            .nameField,
+            .emailField {
+                border-radius: 50px;
+                height: 48px;
+            }
+
+            .messageField {
+                height: 144px;
+                resize: none;
+                border-radius: 20px;
+            }
+
+            .submitButton {
+                width: 290px;
+                height: 56px;
+                font-family: $font-main;
+                font-weight: 700;
+                font-size: 18px;
+                color: #1D1D1D;
+                cursor: pointer;
+                background-color: #FFFFFF;
+                border: none;
+                border-radius: 50px;
+                transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+
+                &:hover {
+                    box-shadow: 0 0 10px #FFFFFF;
+                }
+            }
+        }
+
+        .footerImg {
+            background-image: url('../../public/images/footer.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 23vh;
+            margin-top: 60px;
+        }
+    }
+}
+
+@media screen and (min-width: 520px) and (max-width: 744px) {
+    .contactUs {
+
+        .wrapper {
+            max-width: 520px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        .firstContainer {
+            margin: 0 auto;
+        }
+
+        .footerImg {
+            width: 70%;
+            height: 53vh !important;
+            margin-top: 60px;
+        }
+
+    }
+}
+
+
+@media screen and (min-width: 744px) and (max-width: 1260px) {
+    .contactUs {
+
+        .wrapper {
+            max-width: 520px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        .firstContainer {
+            margin: 0 auto;
+        }
+
+        .footerImg {
+            width: 70%;
+            height: 53vh !important;
+            margin-top: 60px;
+        }
+
+    }
+}
+
+
+@media screen and (min-width: 1260px) and (max-width: 2100px) {
+    .contactUs {
+
+        .wrapper {
+            max-width: 520px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        .firstContainer {
+            margin: 0 auto;
+        }
+
+        .footerImg {
+            width: 70%;
+            height: 53vh !important;
+            margin-top: 60px;
+        }
+
+    }
+}
